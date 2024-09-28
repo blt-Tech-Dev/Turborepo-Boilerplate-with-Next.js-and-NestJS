@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./dist",
+    "sourceMap": true
+  },
+  "exclude": ["dist", "node_modules"],
+  "extends": "@repo/typescript-config/base.json",
+  "include": ["src"]
+}

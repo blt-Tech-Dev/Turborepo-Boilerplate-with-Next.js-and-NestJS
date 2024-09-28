@@ -1,0 +1,9 @@
+
+> @repo/api@0.0.0 build /Users/jrmblt/Desktop/nnp-monorepo/packages/api
+> tsc -b -v
+
+[[90m1:03:35 AM[0m] Projects in this build: 
+    * tsconfig.json
+
+[[90m1:03:35 AM[0m] Project 'tsconfig.json' is up to date because newest input 'src/index.ts' is older than output 'dist/links/entities/link.entity.js.map'
+

@@ -1,0 +1,43 @@
+{
+  "name": "my-turborepo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "author": "",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "test": "turbo test",
+    "test:e2e": "turbo test:e2e",
+    "db:generate": "turbo db:generate",
+    "db:push": "turbo db:push",
+    "clean": "turbo clean && rimraf .turbo node_modules",
+    "db:studio": "turbo db:studio",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.4",
+    "rimraf": "^6.0.1",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/cz-commitlint": "^19.5.0",
+    "@commitlint/types": "^19.5.0",
+    "commitizen": "^4.3.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "bun": "please-use-pnpm",
+    "node": ">=20.17.0",
+    "npm": "please-use-pnpm",
+    "pnpm": ">=9.5.0",
+    "yarn": "please-use-pnpm"
+  }
+}

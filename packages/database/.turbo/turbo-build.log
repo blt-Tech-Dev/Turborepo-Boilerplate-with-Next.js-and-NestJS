@@ -1,0 +1,17 @@
+
+> @repo/database@1.0.0 build /Users/jrmblt/Desktop/nnp-monorepo/packages/database
+> tsup
+
+[34mCLI[39m Building entry: src/index.ts
+[34mCLI[39m Using tsconfig: tsconfig.json
+[34mCLI[39m tsup v8.3.0
+[34mCLI[39m Using tsup config: /Users/jrmblt/Desktop/nnp-monorepo/packages/database/tsup.config.ts
+[34mCLI[39m Target: es2022
+[34mCLI[39m Cleaning output folder
+[34mCJS[39m Build start
+[32mCJS[39m [1mdist/index.js     [22m[32m1.10 KB[39m
+[32mCJS[39m [1mdist/index.js.map [22m[32m168.00 B[39m
+[32mCJS[39m ⚡️ Build success in 7ms
+[34mDTS[39m Build start
+[32mDTS[39m ⚡️ Build success in 430ms
+[32mDTS[39m [1mdist/index.d.ts [22m[32m32.00 B[39m

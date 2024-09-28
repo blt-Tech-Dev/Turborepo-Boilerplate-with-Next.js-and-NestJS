@@ -1,0 +1,21 @@
+# Ignore artifacts:
+build
+coverage
+dist
+.next
+.cache
+
+# Ignore all HTML files:
+*.html
+
+# Ignore all JS files:
+node_modules
+pnpm-lock.yaml
+.prettierignore
+public/
+.gitignore
+.husky/
+.env
+.env.production
+.env*.local
+.env.example

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.ts"],"sourcesContent":["export * from \"@prisma/client\"\n"],"mappings":";;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA,wBAAc,2BAAd;","names":[]}
