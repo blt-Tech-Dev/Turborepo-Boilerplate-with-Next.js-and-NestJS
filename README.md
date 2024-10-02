@@ -1,4 +1,4 @@
-# Turborepo starter
+# Turborepo starter for Next.js / NestJS
 
 This is an official starter Turborepo.
 
