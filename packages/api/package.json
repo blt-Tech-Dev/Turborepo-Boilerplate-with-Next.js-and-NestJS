@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "pnpm build --watch",
-    "build": "tsc -b -v",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\""
+    "build": "tsc -b -v"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
