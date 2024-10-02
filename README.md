@@ -1,14 +1,6 @@
 # Turborepo starter for Next.js / NestJS
 
-This is an official starter Turborepo.
-
-## Using this example
-
-Run the following command:
-
-```bash
-npx create-turbo@latest -e with-nestjs
-```
+This is an starter Turborepo.
 
 ## What's inside?
 
