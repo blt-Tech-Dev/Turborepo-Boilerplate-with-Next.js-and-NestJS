@@ -1,1 +1,3 @@
-export class CreateLinkDto {}
+export class CreateLinkDto {
+  id: string
+}
