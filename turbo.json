@@ -2,10 +2,11 @@
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env.*local"],
   "ui": "tui",
+  "globalEnv": ["SERVER_PORT"],
   "tasks": {
     "build": {
       "dependsOn": ["^build", "db:generate"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*", ".env.local"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**"]
     },
     "clean": {
