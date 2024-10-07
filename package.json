@@ -42,8 +42,5 @@
     "npm": "please-use-pnpm",
     "pnpm": ">=9.5.0",
     "yarn": "please-use-pnpm"
-  },
-  "dependencies": {
-    "prettier-plugin-tailwindcss": "^0.6.8"
   }
 }
