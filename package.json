@@ -35,12 +35,12 @@
     "rimraf": "^6.0.1",
     "turbo": "^2.0.4"
   },
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.4.0",
   "engines": {
     "bun": "please-use-pnpm",
     "node": ">=20.17.0",
     "npm": "please-use-pnpm",
-    "pnpm": ">=9.5.0",
+    "pnpm": ">=9.4.0",
     "yarn": "please-use-pnpm"
   }
 }
