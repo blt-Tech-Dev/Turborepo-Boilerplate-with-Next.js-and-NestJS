@@ -2,6 +2,44 @@
 
 This is an starter of Turborepo using with Next.js and NestJS along with Prisma and Shadcn-ui for development.
 
+## Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/blt-Tech-Dev/Turborepo-Boilerplate-with-Next.js-and-NestJS.git
+```
+
+2. Install the dependencies
+```bash
+pnpm install
+```
+
+3. Create a `.env` file in the database package of the project and add the following environment variables.
+
+```bash
+DATABASE_URL="postgresql://username:password@localhost:5432/dbname"
+```
+
+4. Run the prisma commands to generate the prisma client and apply the migrations.
+
+```bash
+pnpm db:generate
+```
+
+5. Seed the database with the following command. (optional)
+
+```bash
+pnpm db:seed
+```
+
+6. Run the development server
+
+```bash
+pnpm run dev
+```
+
+7. Open the browser and navigate to `http://localhost:3000` to see the Next.js app and `http://localhost:3333` to see the NestJS app.
+
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
