@@ -13,7 +13,8 @@ FROM base AS builder
 WORKDIR /app
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm add -g turbo
 COPY . .
-RUN turbo prune server --docker
+COPY turbo.json turbo.json
+RUN turbo prune api --docker
 
 FROM base AS installer
 WORKDIR /app
@@ -30,4 +31,4 @@ WORKDIR /app
 COPY --from=installer /app .
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm add -g dotenv-cli
 
-CMD [ "sh", "apps/server/docker/production/entry-point.sh" ]
+CMD [ "sh", "apps/api/docker/production/entry-point.sh" ]

@@ -1,5 +1,5 @@
 services:
-  client:
+  web:
     build:
       context: ../../
       dockerfile: apps/web/docker/production/Dockerfile
@@ -21,7 +21,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  server:
+  api:
     build:
       context: ../../
       dockerfile: apps/api/docker/production/Dockerfile

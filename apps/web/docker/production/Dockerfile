@@ -13,6 +13,7 @@ FROM base AS builder
 WORKDIR /app
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm add -g turbo
 COPY . .
+COPY turbo.json turbo.json
 RUN turbo prune web --docker
 
 FROM base AS installer
@@ -31,7 +32,16 @@ ENV NODE_ENV production
 COPY --from=installer /app ./
 
 # Create a production build using Next.js App Router
-RUN pnpm turbo build --filter=web...
+# RUN pnpm turbo build --filter=web...
+
+# Ensure the .next directory is present
+RUN ls -la /app/apps/web
+
+# Copy the built Next.js application
+COPY --from=installer /app/apps/web/.next /app/apps/web/.next
+
+# Set the working directory to the web app
+WORKDIR /app/apps/web
 
 # Expose necessary ports
 EXPOSE 3000
