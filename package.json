@@ -1,19 +1,21 @@
 {
-  "name": "my-turborepo",
+  "name": "next-pris-shad-nest-turbotemplate",
   "version": "0.0.0",
   "private": true,
   "description": "",
   "author": "",
   "license": "UNLICENSED",
   "scripts": {
+    "postinstall": "pnpm db:generate",
     "dev": "turbo dev",
     "build": "turbo build",
     "test": "turbo test",
     "test:e2e": "turbo test:e2e",
     "db:generate": "turbo db:generate",
     "db:push": "turbo db:push",
-    "clean": "turbo clean && rimraf .turbo node_modules",
     "db:studio": "turbo db:studio",
+    "db:seed": "turbo db:seed",
+    "clean": "turbo clean && rimraf .turbo node_modules",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky",
@@ -40,5 +42,8 @@
     "npm": "please-use-pnpm",
     "pnpm": ">=9.5.0",
     "yarn": "please-use-pnpm"
+  },
+  "dependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.8"
   }
 }

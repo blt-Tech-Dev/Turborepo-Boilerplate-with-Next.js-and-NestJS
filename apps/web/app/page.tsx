@@ -1,6 +1,6 @@
-import { Button } from "@repo/ui/button";
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Button } from "@repo/ui/components/ui/button";
 
 export default function Home() {
   return (
@@ -46,7 +46,7 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <Button appName="web" className={styles.secondary}>
+        <Button variant={"default"} className="">
           Open alert
         </Button>
       </main>

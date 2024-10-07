@@ -1,5 +1,5 @@
 const config = {
-  "*.{ts,tsx}": ["pnpm run lint --", "pnpm run check-types --"],
+  "*.{ts,tsx}": ["pnpm run format", "pnpm run lint --"],
 };
 
 module.exports = config;

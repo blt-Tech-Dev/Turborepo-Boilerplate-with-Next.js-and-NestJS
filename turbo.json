@@ -12,6 +12,7 @@
       "cache": false
     },
     "lint": {
+      "dependsOn": ["^lint"]
     },
     "db:generate": {
       "cache": false
@@ -30,6 +31,9 @@
     "start": {
       "dependsOn": ["^build"],
       "persistent": true
+    },
+    "db:seed": {
+      "cache": false
     }
   }
 }

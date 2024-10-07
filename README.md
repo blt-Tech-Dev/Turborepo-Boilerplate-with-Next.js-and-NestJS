@@ -1,6 +1,6 @@
 # Turborepo starter for Next.js / NestJS
 
-This is an starter Turborepo.
+This is an starter of Turborepo using with Next.js and NestJS along with Prisma and Shadcn-ui for development.
 
 ## What's inside?
 
@@ -15,6 +15,7 @@ This Turborepo includes the following packages/apps:
     └── packages
         ├── @repo/api                 # Shared `NestJS` resources.
         ├── @repo/eslint-config       # `eslint` configurations (includes `prettier`)
+        ├── @repo/database            # Shared `Prisma` resources.
         ├── @repo/jest-config         # `jest` configurations
         ├── @repo/typescript-config   # `tsconfig.json`s used throughout the monorepo
         └── @repo/ui                  # Shareable stub React component library.
@@ -49,6 +50,25 @@ pnpm run build
 ```bash
 # Will run the development server for all the app & packages with the supported `dev` script.
 pnpm run dev
+```
+
+#### Prisma
+
+```bash
+# Will run the prisma commands for the `api` app. can be used to generate the prisma client in the root of the project.
+pnpm db:generate
+
+# Using this command you can push the database schema to the database.
+pnpm db:push
+
+# If you want to open the prisma studio, you can use the following command.
+pnpm db:studio
+
+# If you have a new migration, you can run the following command to apply the migration. using in the `database` package.
+pnpm db:migrate
+
+# If you want to seed the database, you can use the following command.
+pnpm db:seed
 ```
 
 #### test
@@ -107,3 +127,11 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+## To Do
+
+- [x] Add Prisma to the project
+- [x] Add Shadcn-ui to the project
+- [x] Add Share Dto to the project
+- [ ] [WIP] Make Dockerfile for the project
+- [ ] Add Storybook to the project
